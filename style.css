@@ -1,0 +1,237 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+body{
+    background-color: #000000;
+    color: #ffffff;    
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+    
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin: 0px 30px 0px 30px;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: #00f7ff;
+    text-shadow:0 0 8px #00f7ff,0 0 18px #00f7ff,0 0 28px #00f7ff;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover{
+    color: #00f7ff;
+    cursor: pointer;
+}
+.home{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.home .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+}
+.home .content  h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.home .content  h1{
+    font-size: 62px;
+    margin-bottom: 5px;
+}
+.home .content  span{
+    color: #00f7ff;
+    text-shadow: 0 0 8px #00f7ff,0 0 18px #00f7ff,0 0 90px #00f7ff;
+}
+.home .content  h2{
+    font-size: 28px;
+    color:#cccccc;
+    margin-bottom: 28px;
+}
+.home .content  p{
+    font-size: 22px;
+    coloor:#999;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+.home .buttons{
+    display : flex ;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    margin-bottom: 90px;
+}
+.btn1{
+    display: flex;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    background: #00f7ff;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 10px;
+    box-shadow: 0 0 12px #00f7ff;
+    box-sizing: border-box;
+}
+.btn1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 12px #00f7ff , 0 0 22px #00f7ff;
+}
+.btn2{
+    display: flex;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    color: #00f7ff;
+    border: 1px solid #00f7ff;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+.btn2:hover{
+    background: #00f7ff;
+    color: #000000;
+    box-shadow: 0 0 12px #00f7ff , 0 0 22px #00f7ff;
+    transform: translateY(-5px);
+}
+.home .image{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+.home .image img{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00f7ff;
+    box-shadow: 0 0 18px #00f7ff, 0 0 40px #00f7ff, 0 0 38px #00f7ff;
+}
+.skills{
+  padding:90px 0;
+}
+
+.section-title{
+  font-size:38px;
+  text-align:center;
+  margin-bottom:45px;
+  color:#00f7ff;
+}
+
+.skills-grid .sub-title{
+  text-align:center;
+  color:#f7fbfb;
+  font-size:22px;
+  margin-bottom:28px;
+  font-weight:700;
+
+}
+.skills-grid .skill-box p{
+  color:#d2e7e7;
+  font-size:17px;
+  /* text-shadow:0 0 8px #00f7ff; */
+}
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.skill-box{
+  background:#0d0d0d;
+  padding:28px;
+  text-align:center;
+  border:1px solid #1f1f1f;
+  border-radius:12px;
+  font-size:20px;
+  font-weight:500;
+  transition:0.7s;
+}
+.skill-box:hover{
+  transform:translateY(-10px);
+  border-color:#00f7ff;
+  box-shadow:0 0 18px rgba(0,247,255,0.4);
+}
+.projects{
+  padding:90px 0;
+}
+
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.project-box{
+  background:#0d0d0d;
+  border:1px solid #1f1f1f;
+  padding:28px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.project-box h3{
+  margin-bottom:12px;
+  color:#00f7ff;
+}
+
+.project-box p{
+  color:#aaa;
+  line-height:1.7;
+  font-size:15px;
+}
+
+.project-box:hover{
+  transform:translateY(-8px);
+  border-color:#00f7ff;
+  box-shadow:0 0 18px rgba(0,247,255,0.35);
+}
+.contact-info p{
+  color:#cccccc;
+  font-size:18px;
+  margin-bottom:18px;
+}
+
+footer{
+  padding:28px 0;
+  border-top:1px solid #111;
+  text-align:center;
+}
+
+footer p{
+  color:#777;
+  font-size:15px;
+}
